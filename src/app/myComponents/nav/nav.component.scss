@@ -1,0 +1,45 @@
+@import "../../../styles.scss";
+.nav {
+  // padding: 2rem;
+  // margin-bottom: 4rem;
+  background-color: #2680c0;
+}
+.title {
+  font-size: $nav-font-size;
+  display: grid;
+  place-items: center;
+  color: blue;
+  font-weight: bold;
+}
+.notification-icon {
+  font-size: $nav-font-size;
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  i {
+    color: blueviolet;
+  }
+  .notification-count {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    display: grid;
+    place-content: center;
+    height: 3rem;
+    // width: 3rem;
+    border-radius: 50%;
+    border: 2px solid red;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    padding: 0.3rem;
+    background-color: white;
+  }
+}
+.color {
+  color: "red" !important;
+}

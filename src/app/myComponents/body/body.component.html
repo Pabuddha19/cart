@@ -1,0 +1,42 @@
+<div class=" bag d-flex justify-content-center align-items-center py-3">Your Bag</div>
+
+<div class="container color">
+    <div class="row d-flex justify-content-center" *ngFor="let value of dataList; let i = index">
+        <div class="products-each col-8 d-flex justify-content-between align-items-center">
+            <div class="product d-flex">
+                <div class="pic pe-5">
+                    <img [src]=value.src alt="Iphone">
+                </div>
+                <div class="details d-flex flex-column align-items-start justify-content-center">
+                    <p class="name">{{value.name}}</p>
+                    <p>$ {{value.price}}</p>
+                    <button class="btn btn-danger" (click)="remove(value)"> Remove </button>
+                </div>
+            </div>
+            <div class="count d-flex  flex-column align-items-center">
+
+                <button class=" btn btn-primary up" style="font-size: 1.5rem;" (click)="incrememtCount(i)">+</button>
+
+                <div class="count-number">{{value.quantity}}</div>
+
+                <button class="down btn btn-primary " style="font-size: 1.5rem;"
+                    (click)="decrementCount(value) ">-</button>
+                <!-- [disabled]="(value?.quantity??0) <= 1 ? true : false" -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" total_section container">
+    <div class="row d-flex justify-content-center pt-4">
+        <div class="col-8">
+            <hr>
+            <div class=" d-flex total justify-content-between align-items-center">
+                <div>Total</div>
+                <div>${{totalPrice}} </div>
+                <!-- <div>{{totalQuantity}}</div> -->
+            </div>
+            <!-- {{TotalAddUpPrice}} -->
+        </div>
+    </div>
+</div>

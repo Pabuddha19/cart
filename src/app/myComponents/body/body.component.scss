@@ -1,0 +1,30 @@
+.bag {
+  font-size: 3rem;
+}
+.pic {
+  width: 15rem;
+
+  img {
+    width: 100%;
+  }
+}
+.product {
+  .details {
+    font-size: 2rem;
+  }
+}
+.count {
+  font-size: 3rem;
+}
+.total_section {
+  font-size: 3rem;
+  hr {
+    border: 0;
+    border-top: 3px solid #000000;
+    opacity: 1;
+  }
+}
+
+.color {
+  color: "red" !important;
+}
